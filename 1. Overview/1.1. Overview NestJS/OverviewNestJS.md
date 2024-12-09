@@ -12,7 +12,7 @@ $ nest new project-name
 
 Thư mục project-name sẽ được tạo, các module và 1 số tệp mẫu khác sẽ được cài đặt và thư mục src/ sẽ được tạo và chứa 1 số tệp cốt lõi. <br>
 
-https://images.viblo.asia/full/c9b434cd-bb2b-4c88-b8a9-27cd3bc70949.png
+<img src="https://images.viblo.asia/full/c9b434cd-bb2b-4c88-b8a9-27cd3bc70949.png">
 
 Giải thích:
 app.controller.ts: Chứa các router để xử lý các request và trả về response cho client.
@@ -36,6 +36,7 @@ static method create() là 1 phương thức tĩnh của lớp NestFactory, đư
 Ngoài ra NestJS khuyến khích chúng ta nên tuân thủ theo cấu trúc project như sau để luôn giữ cho mã sạch, tái sử dụng, độc lập và khả năng mở rộng cao.
 
 https://images.viblo.asia/full/55e76541-b477-4b79-abef-6961e7599c5c.png
+<img src="https://images.viblo.asia/full/55e76541-b477-4b79-abef-6961e7599c5c.png">
 
 <h2>Chạy ứng dụng</h2>
 Sau khi quá trình cài đặt hoàn tất, chạy lệnh sau để được nhận đường dẫn HTTP được gửi đến:
