@@ -18,11 +18,11 @@ Thư mục project-name sẽ được tạo, các module và 1 số tệp mẫu 
 <img src="https://images.viblo.asia/full/c9b434cd-bb2b-4c88-b8a9-27cd3bc70949.png">
 
 Giải thích: <br>
-app.controller.ts: Chứa các router để xử lý các request và trả về response cho client. <br>
-app.controller.spec.ts: Có nhiệm vụ viết unit-test cho các controller. Như kiểu kiểm tra các logic của app.controller để đảm bảo rằng các phương thức và endpoint hoạt động chính xác. <br>
-app.module.ts: Module gốc của ứng dụng. Nó được đóng vai trò là "trung tâm" của ứng dụng trong việc cấu hình và kết nối các thành phần khác của ứng dụng, chẳng hạn như controllers, services, modules con và các providers. <br>
-app.service.ts: Service chứa các logic mà controller sẽ dùng đến. <br>
-main.ts: Sử dụng nestFactory để tạo ứng dụng <br>
+- app.controller.ts: Chứa các router để xử lý các request và trả về response cho client. <br>
+- app.controller.spec.ts: Có nhiệm vụ viết unit-test cho các controller. Như kiểu kiểm tra các logic của app.controller để đảm bảo rằng các phương thức và endpoint hoạt động chính xác. <br>
+- app.module.ts: Module gốc của ứng dụng. Nó được đóng vai trò là "trung tâm" của ứng dụng trong việc cấu hình và kết nối các thành phần khác của ứng dụng, chẳng hạn như controllers, services, modules con và các providers. <br>
+- app.service.ts: Service chứa các logic mà controller sẽ dùng đến. <br>
+- main.ts: Sử dụng NestFactory để tạo ứng dụng <br>
 
 Về cơ bản thì main.ts sẽ sử dụng static method create() của NestFactory để tạo server app như sau: <br>
 
@@ -38,12 +38,13 @@ boostrap();
 ```
 <br>
 static method create() là 1 phương thức tĩnh của lớp NestFactory, được sử dụng để khởi tạo và cấu hình ứng dụng, từ đó bắt đầu chạy ứng dụng trên 1 server HTTP. <br>
-Ngoài ra NestJS khuyến khích chúng ta nên tuân thủ theo cấu trúc project như sau để luôn giữ cho mã sạch, tái sử dụng, độc lập và khả năng mở rộng cao.
+Ngoài ra NestJS khuyến khích chúng ta nên tuân thủ theo cấu trúc project như sau để luôn giữ cho mã sạch, tái sử dụng, độc lập và khả năng mở rộng cao. <br>
 
 <img src="https://images.viblo.asia/full/55e76541-b477-4b79-abef-6961e7599c5c.png">
 
 <h2>Chạy ứng dụng</h2>
-Sau khi quá trình cài đặt hoàn tất, chạy lệnh sau để được nhận đường dẫn HTTP được gửi đến:
+Sau khi quá trình cài đặt hoàn tất, chạy lệnh sau để được nhận đường dẫn HTTP được gửi đến: <br>
+
 ```bash
 $ npm run start
 ```
@@ -52,10 +53,10 @@ $ npm run start
 
 Lệnh này khởi động ứng dụng với máy chủ HTTP được xác định trong tệp src/main.ts. Khi ứng dụng đang chạy, hãy mở trình duyệt của bạn và điều hướng đến http://localhost:3000/. Bạn sẽ thấy thông báo Hello World! <br>
 
-Ngoài ra để theo dõi những thay đổi trong tệp, chạy lệnh:
+Ngoài ra để theo dõi những thay đổi trong tệp, chạy lệnh: <br>
+
 ```bash
 $ npm run start:dev
 ```
 
-<br>
 Lệnh này sẽ theo dõi các tệp của bạn, tự động biên dịch lại và tải lại máy chủ.
